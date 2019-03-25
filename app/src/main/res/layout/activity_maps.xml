@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MapsActivity" >
+
+    <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/text_on"
+            android:textOff="@string/text_off"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/toggleButton"/>
+    <TextView
+            android:text="@string/eltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/toggleButton"
+            android:id="@+id/textView1"/>
+    <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometer"
+            android:format="@string/chrometer_format"
+            android:layout_toRightOf="@id/textView1"
+            android:layout_marginRight="4dp"
+            android:layout_alignBaseline="@id/textView1"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_toRightOf="@id/chronometer"
+              android:text="@string/distance"
+              android:id="@+id/textView2"
+    />
+    <TextView
+            android:text="0.000km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView2"
+            android:layout_marginLeft="4dp"
+            android:textStyle="bold"
+            android:id="@+id/disText"/>
+    <TextView
+            android:text="@string/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/toggleButton"
+            android:layout_below="@id/textView1"
+            android:id="@+id/textView4"/>
+    <TextView
+            android:text="ここに住所を表示"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView4"
+            android:layout_below="@id/textView2"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/address"/>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_below="@id/toggleButton"
+              android:layout_marginTop="10dp"
+              android:id="@+id/map"
+              tools:context=".MapsActivity"
+              android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+</RelativeLayout>

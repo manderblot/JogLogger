@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">JogLogger</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="text_on">Stop</string>
+    <string name="text_off">Start</string>
+    <string name="eltime">経過時間</string>
+    <string name="chrometer_format">%s</string>
+    <string name="distance">移動距離</string>
+    <string name="position">現在地</string>
+    <string name="speed">km/h</string>
+    <string name="km">km</string>
+    <string name="ret">戻る</string>
+    <string name="empty">表示するデータがありません</string>
+    <string name="alert_dialog_cancel">CANCEL</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_no">NO</string>
+    <string name="alert_dialog_yes">YES</string>
+    <string name="wifi_confirm_dialog_message">市街地を走るとWiFiをひろって現在地が飛ぶことが有ります</string>
+    <string name="wifi_confirm_dialog_title">WiFiをOFFにしますか？</string>
+    <string name="save_confirm_dialog_title">この走行を記録しますか</string>
+</resources>
